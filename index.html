@@ -1,0 +1,196 @@
+<!--Version 1 basica de la carta de un resto bar, cafeteria, pizzeria, etc.*/-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carta de cafes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#carta">Carta</a></li>
+            <li><a href="#formulario">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="inicio">
+        <h1>La Cafeta - Carta de cafes</h1>
+        <h2>El mejor cafe de la ciudad.</h2>
+    </div>
+    <div id="carta">
+        <table>
+            <tr>
+                <th>Cafes</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td><img src="img/img1.png" alt="cafe"></br><span class="destacado">1. </span>Americano</td>
+                <td class="precio">2200</td>
+            </tr>
+            <tr>
+                <td><img src="img/img2.png" alt="cafe"></br><span class="destacado">2. </span>Macchiato</td>
+                <td class="precio">3500</td>
+            </tr>
+            <tr>
+                <td><img src="img/img3.png" alt="cafe"></br><span class="destacado">3. </span>Cafe con leche</td>
+                <td class="precio">3100</td>
+            </tr>
+            <tr>
+                <td><img src="img/img4.png" alt="cafe"></br><span class="destacado">4. </span>Latte</td>
+                <td class="precio">6200</td>
+            </tr>
+            <tr>
+                <td><img src="img/img5.png" alt="cafe"></br><span class="destacado">5. </span>Cappuccino</td>
+                <td class="precio">8100</td>
+            </tr>
+            <tr>
+                <td><img src="img/img6.png" alt="cafe"></br><span class="destacado">6. </span>Chocolate con menta</td>
+                <td class="precio">6500</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th>Especialidades</th>
+                <th>Precio</th>
+
+            </tr>
+            <tr>
+
+                <td><img src="img/img7.png" alt="cafe"></br><span class="destacado">7. </span>Cafe con Sirope</td>
+                <td class="precio">2500</td>
+
+            </tr>
+            <tr>
+
+                <td><img src="img/img8.png" alt="cafe"></br><span class="destacado">8. </span>Cafe con doble crema</td>
+                <td class="precio">7500</td>
+
+            </tr>
+            <tr>
+
+                <td><img src="img/img9.png" alt="cafe"></br><span class="destacado">9. </span>Moca Latte</td>
+                <td class="precio">7100</td>
+
+            </tr>
+            <tr>
+
+                <td><img src="img/img10.png" alt="cafe"></br><span class="destacado">10. </span>Cafe con crema de matcha
+                </td>
+                <td class="precio">2800</td>
+
+            </tr>
+            <tr>
+                <td><img src="img/img11.png" alt="cafe"></br><span class="destacado">11. </span>Cappuccino frio</td>
+                <td class="precio">8100</td>
+
+
+            </tr>
+            <tr>
+                <td><img src="img/img12.png" alt="cafe"></br><span class="destacado">12. </span>Chocolate con menta</td>
+                <td class="precio">6500</td>
+
+
+            </tr>
+
+        </table>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th>Tes</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td><img src="img/img13.png" alt="cafe"></br><span class="destacado">13. </span>Te Rooibos</td>
+                <td class="precio">6500</td>
+            </tr>
+            <tr>
+                <td><img src="img/img14.png" alt="cafe"></br><span class="destacado">14. </span>Te con cafe y leche</td>
+                <td class="precio">3500</td>
+            </tr>
+            <tr>
+
+                <td><img src="img/img1.png" alt="cafe"></br><span class="destacado">15. </span>Te de frutos rojos</td>
+                <td class="precio">5500</td>
+            </tr>
+            <tr>
+
+                <td><img src="img/img2.png" alt="cafe"></br><span class="destacado">16. </span>Te de naranja</td>
+                <td class="precio">2200</td>
+            </tr>
+            <tr>
+                <td><img src="img/img3.png" alt="cafe"></br><span class="destacado">17. </span>Cappuccino con limon</td>
+                <td class="precio">8100</td>
+
+
+            </tr>
+
+
+        </table>
+    </div>
+
+    <div class="pedido">
+        <h3>Realizá tu pedido</h3>
+        <p>Seleccioná el numero del producto y lo sumaremos a la lista.</p>
+
+        <div id="formulario">
+            <form id="pedidoForm">
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre, solo texto" required minlength="2" pattern="[A-Za-z\s]+" title="Ingrese solo texto para el nombre">
+
+                <label for="Nombre">Apellido</label>
+                <input type="text" name="apellido" id="apellido"  placeholder="ingrese su apellido, solo texto" required minlength="2" pattern="[A-Za-z\s]+" title="Ingrese solo texto para el apellido">
+
+                <label for="Nombre">Numero de pedido</label>
+                <select name="npedido" id="npedido" required>
+                    <option value="1">Americano</option>
+                    <option value="2">Macchiato</option>
+                    <option value="3">Cafe con Leche</option>
+                    <option value="4">Latte</option>
+                    <option value="5">Cappuccino</option>
+                    <option value="6">Chocolate con menta</option>
+                    <option value="7">Cafe con sirope</option>
+                    <option value="8">Cafe con doble crema</option>
+                    <option value="9">Moca Latte</option>
+                    <option value="10">Cafe con Crema de Matcha</option>
+                    <option value="11">Cappuccino frio</option>
+                    <option value="12">Chocolate con menta</option>
+                    <option value="13">Te Rooibos</option>
+                    <option value="14">Te con cafe y leche</option>
+                    <option value="15">Te de frutos rojos</option>
+                    <option value="16">Te de naranja</option>
+                    <option value="17">Cappuccino con limon</option>
+                </select>
+                <br>
+                <button type="submit">Enviar pedido</button>
+            </form>
+        </div>
+    </div>
+    <div class="pedido">
+        <h3>Pedidos realizados</h3>
+        <div id="pedidosrealizados">
+            <p id="msgdefault">Aun no hay pedidos!</p>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="#">LaCafeta.com.ar</a>
+            <a href="#">@LaCafetaenFB</a>
+            <a href="#">@LaCafetaenTW</a>
+            <a href="#">@LaCafetaenIG</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

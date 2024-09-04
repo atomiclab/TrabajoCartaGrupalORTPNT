@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #374855;
+}
+table {
+    width: 100%;
+    padding: 10px;
+}
+
+th {
+    background-color: #4c5c68;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    text-align: center;
+}
+
+
+td {
+    background-color: #1C252C;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+a:hover {
+    color: tomato;
+}
+
+h1 {
+    padding-top: 80px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.precio{
+    color: tomato;
+    font-size: 25px;
+   
+}
+.precio::before{
+    content: "$";
+}
+
+nav {
+    background-color: #4c5c68;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+
+.pedido{
+    background-color: #4c5c68;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1C252C;
+}
+
+input[type="text"],
+input[type="number"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.destacado{
+    color: tomato;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#pedidosrealizados{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
