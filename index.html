@@ -6,7 +6,11 @@
 <head>
     <title>Carta de cafes</title>
     <meta charset="UTF-8">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!--Pisamos estilos del bootstrap, por eso dejamos el css abajo del mismo.-->
 </head>
@@ -23,122 +27,178 @@
         <h1>La Cafeta - Carta de cafes</h1>
         <h2>El mejor cafe de la ciudad.</h2>
     </div>
+    
+<!-- Mas cosas con Bootstrap-->
+    <div class="info">
+        <div class="accordion accordion-flush" id="acordion">
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Sobre nosotros
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#acordion">
+                <div class="accordion-body">
+                Somos La Cafetería, el mejor lugar para disfrutar de una amplia variedad de cafés de alta calidad. Nuestro
+                objetivo es brindarte una experiencia única en cada taza, utilizando granos de café cuidadosamente
+                seleccionados y preparados por nuestros expertos baristas. Ven y descubre por qué somos el lugar de
+                referencia para los amantes del café.
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Nuestra carta
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#acordion">
+                <div class="accordion-body">
+                En nuestra carta encontrarás una amplia selección de cafés exquisitos, desde los clásicos como el
+                Café Americano y el Cappuccino, hasta opciones más innovadoras como el Macchiato y el Chocolate con menta.
+                Todos nuestros cafés son preparados con los mejores ingredientes y con un cuidado especial para
+                garantizar la mejor calidad en cada taza. ¡Descubre tu nuevo café favorito en La Cafetería!
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Contacto
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#acordion">
+                <div class="accordion-body">
+                ¿Tienes alguna pregunta o comentario? ¡Nos encantaría escucharte! Puedes ponerte en contacto con
+                nosotros a través del formulario al final de la página. Estaremos encantados de responder a todas tus consultas y
+                brindarte la mejor atención posible. ¡Esperamos verte pronto en La Cafetería!
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
     <div id="carta">
         <table>
             <tr>
+                <th class="tabla-numeros">#</th>
                 <th class="tituloDeTabla">Cafes</th>
                 <th class="tituloDeTabla">Precio</th>
             </tr>
             <tr>
-                <td><img src="img/img1.png" alt="cafe"></br><span class="destacado">1. </span>Americano</td>
+                <td><span class="destacado">1. </span></td>
+                <td><img src="img/img1.png" alt="cafe"><br>Americano</td>
                 <td class="precio">2200</td>
             </tr>
             <tr>
-                <td><img src="img/img2.png" alt="cafe"></br><span class="destacado">2. </span>Macchiato</td>
+                <td><span class="destacado">2. </span></td>
+                <td><img src="img/img2.png" alt="cafe"><br>Macchiato</td>
                 <td class="precio">3500</td>
             </tr>
             <tr>
-                <td><img src="img/img3.png" alt="cafe"></br><span class="destacado">3. </span>Cafe con leche</td>
+                <td><span class="destacado">3. </span></td>
+                <td><img src="img/img3.png" alt="cafe"><br>Cafe con leche</td>
                 <td class="precio">3100</td>
             </tr>
             <tr>
-                <td><img src="img/img4.png" alt="cafe"></br><span class="destacado">4. </span>Latte</td>
+                <td><span class="destacado">4. </span></td>
+                <td><img src="img/img4.png" alt="cafe"><br>Latte</td>
                 <td class="precio">6200</td>
             </tr>
             <tr>
-                <td><img src="img/img5.png" alt="cafe"></br><span class="destacado">5. </span>Cappuccino</td>
+                <td><span class="destacado">5. </span></td>
+                <td><img src="img/img5.png" alt="cafe"><br>Cappuccino</td>
                 <td class="precio">8100</td>
             </tr>
             <tr>
-                <td><img src="img/img6.png" alt="cafe"></br><span class="destacado">6. </span>Chocolate con menta</td>
+                <td><span class="destacado">6. </span></td>
+                <td><img src="img/img6.png" alt="cafe"><br>Chocolate con menta</td>
                 <td class="precio">6500</td>
             </tr>
-
         </table>
-    </div>
 
-    <div>
         <table>
             <tr>
-                <th class="tituloDeTabla">Especialidades</th>
+                <th class="tabla-numeros">#</th>
+                <th class="tituloDeTabla">Cafes</th>
                 <th class="tituloDeTabla">Precio</th>
-
             </tr>
             <tr>
-
-                <td><img src="img/img7.png" alt="cafe"></br><span class="destacado">7. </span>Cafe con Sirope</td>
+                <td><span class="destacado">7. </span></td>
+                <td><img src="img/img7.png" alt="cafe"><br>Cafe con Sirope</td>
                 <td class="precio">2500</td>
-
             </tr>
             <tr>
-
-                <td><img src="img/img8.png" alt="cafe"></br><span class="destacado">8. </span>Cafe con doble crema</td>
+                <td><span class="destacado">8. </span></td>
+                <td><img src="img/img8.png" alt="cafe"><br>Cafe con doble crema</td>
                 <td class="precio">7500</td>
-
             </tr>
             <tr>
-
-                <td><img src="img/img9.png" alt="cafe"></br><span class="destacado">9. </span>Moca Latte</td>
+                <td><span class="destacado">9. </span></td>
+                <td><img src="img/img9.png" alt="cafe"><br>Moca Latte</td>
                 <td class="precio">7100</td>
-
             </tr>
             <tr>
-
-                <td><img src="img/img10.png" alt="cafe"></br><span class="destacado">10. </span>Cafe con crema de matcha
-                </td>
+                <td><span class="destacado">10. </span></td>
+                <td><img src="img/img10.png" alt="cafe"><br>Cafe con crema de matcha</td>
                 <td class="precio">2800</td>
-
             </tr>
             <tr>
-                <td><img src="img/img11.png" alt="cafe"></br><span class="destacado">11. </span>Cappuccino frio</td>
+                <td><span class="destacado">11. </span></td>
+                <td><img src="img/img11.png" alt="cafe"><br>Cappuccino frio</td>
                 <td class="precio">8100</td>
-
-
             </tr>
             <tr>
-                <td><img src="img/img12.png" alt="cafe"></br><span class="destacado">12. </span>Chocolate con menta</td>
+                <td><span class="destacado">12. </span></td>
+                <td><img src="img/img12.png" alt="cafe"><br>Chocolate con menta</td>
                 <td class="precio">6500</td>
-
-
             </tr>
+        </table>
 
+
+        <!-- Tabla con estilos de bootstrap -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="tabla-numeros">#</th>
+                    <th class="tituloDeTabla">Tes</th>
+                    <th class="tituloDeTabla">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="destacado">13. </span></td>
+                    <td><img src="img/img13.png" alt="cafe"><br>Te Rooibos</td>
+                    <td class="precio">6500</td>
+                </tr>
+                <tr>
+                    <td><span class="destacado">14. </span></td>
+                    <td><img src="img/img14.png" alt="cafe"><br>Te con cafe y leche</td>
+                    <td class="precio">3500</td>
+                </tr>
+                <tr>
+                    <td><span class="destacado">15. </span></td>
+                    <td><img src="img/img1.png" alt="cafe"><br>Te de frutos rojos</td>
+                    <td class="precio">5500</td>
+                </tr>
+                <tr>
+                    <td><span class="destacado">16. </span></td>
+                    <td><img src="img/img2.png" alt="cafe"><br>Te de naranja</td>
+                    <td class="precio">2200</td>
+                </tr>
+                <tr>
+                    <td><span class="destacado">17. </span></td>
+                    <td><img src="img/img3.png" alt="cafe"><br>Cappuccino con limon</td>
+                    <td class="precio">8100</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 
-    <div>
-        <table>
-            <tr>
-                <th class="tituloDeTabla">Tes</th>
-                <th class="tituloDeTabla">Precio</th>
-            </tr>
-            <tr>
-                <td><img src="img/img13.png" alt="cafe"></br><span class="destacado">13. </span>Te Rooibos</td>
-                <td class="precio">6500</td>
-            </tr>
-            <tr>
-                <td><img src="img/img14.png" alt="cafe"></br><span class="destacado">14. </span>Te con cafe y leche</td>
-                <td class="precio">3500</td>
-            </tr>
-            <tr>
-
-                <td><img src="img/img1.png" alt="cafe"></br><span class="destacado">15. </span>Te de frutos rojos</td>
-                <td class="precio">5500</td>
-            </tr>
-            <tr>
-
-                <td><img src="img/img2.png" alt="cafe"></br><span class="destacado">16. </span>Te de naranja</td>
-                <td class="precio">2200</td>
-            </tr>
-            <tr>
-                <td><img src="img/img3.png" alt="cafe"></br><span class="destacado">17. </span>Cappuccino con limon</td>
-                <td class="precio">8100</td>
 
 
-            </tr>
-
-
-        </table>
-    </div>
 
     <div class="pedido">
         <h3>Realizá tu pedido</h3>
@@ -147,10 +207,12 @@
         <div id="formulario">
             <form id="pedidoForm">
                 <label for="Nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre, solo texto" required minlength="2" pattern="[A-Za-z\s]+" title="Ingrese solo texto para el nombre">
+                <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre, solo texto" required
+                    minlength="2" pattern="[A-Za-z\s]+" title="Ingrese solo texto para el nombre">
 
                 <label for="Nombre">Apellido</label>
-                <input type="text" name="apellido" id="apellido"  placeholder="ingrese su apellido, solo texto" required minlength="2" pattern="[A-Za-z\s]+" title="Ingrese solo texto para el apellido">
+                <input type="text" name="apellido" id="apellido" placeholder="ingrese su apellido, solo texto" required
+                    minlength="2" pattern="[A-Za-z\s]+" title="Ingrese solo texto para el apellido">
 
                 <label for="Nombre">Numero de pedido</label>
                 <select name="npedido" id="npedido" required>
